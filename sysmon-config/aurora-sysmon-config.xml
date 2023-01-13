@@ -121,7 +121,11 @@
 			</Rule>
 		</ProcessAccess>
 	</RuleGroup>
-
+	<RuleGroup name="" groupRelation="or">
+		<ProcessAccess onmatch="exclude">
+			<SourceImage condition="contains any">aurora-agent.exe;aurora-agent-64.exe</SourceImage>
+		</ProcessAccess>
+	</RuleGroup>	
 	<!--SYSMON EVENT ID 12 & 13 & 14 : REGISTRY MODIFICATION [RegistryEvent]-->
 		<!--EVENT 12: "Registry object added or deleted"-->
 		<!--EVENT 13: "Registry value set"-->
