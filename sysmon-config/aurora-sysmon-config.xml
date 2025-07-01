@@ -40,8 +40,8 @@
 			<Image condition="is">TrustedInstaller.exe</Image> <!--Ignore setups-->
 			<TargetFilename condition="contains">\NVIDIA\NvBackend\ApplicationOntology\</TargetFilename> <!--NVIDIA GeForce Experience Application Ontology, 1000's of events in user profile-->
 			<Image condition="end with">AppData\Local\Microsoft\Teams\current\Teams.exe</Image> <!--Teams constantly changes files-->
-			<Image condition="end with">Spotify.exe</Image> <!--Spotify constantly changes files-->
-			<Image condition="end with">slack.exe</Image> <!--slack constantly changes files-->
+			<Image condition="end with">\Spotify.exe</Image> <!--Spotify constantly changes files-->
+			<Image condition="end with">\slack.exe</Image> <!--slack constantly changes files-->
 			<Image condition="end with">\Google\Chrome\Application\chrome.exe</Image> <!--chrome constantly changes files-->
 		</FileCreateTime>
 	</RuleGroup>
@@ -357,9 +357,9 @@
 			<TargetFilename condition="end with">.reg</TargetFilename>
 			<TargetFilename condition="contains">Downloads</TargetFilename>
 			<TargetFilename condition="contains">AppData</TargetFilename>
-			<TargetFilename condition="contains">Temp</TargetFilename>
+			<TargetFilename condition="contains">\Temp</TargetFilename>
 			<TargetFilename condition="contains">ProgramData</TargetFilename>
-			<TargetFilename condition="contains">Users</TargetFilename>
+			<TargetFilename condition="contains">\Users\</TargetFilename>
 			<TargetFilename condition="end with">.vb</TargetFilename>
 			<TargetFilename condition="end with">.vbe</TargetFilename>
 			<TargetFilename condition="end with">.vbs</TargetFilename>
